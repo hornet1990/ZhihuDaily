@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" id="KGk-i7-Jjw" customClass="NewsTodayTableViewCell" customModule="ZhihuDaily" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U33-Pq-HZU">
+                        <rect key="frame" x="15" y="15" width="198.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.26666666666666666" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c8V-qE-yza">
+                        <rect key="frame" x="228.5" y="15" width="76.5" height="61.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="c8V-qE-yza" secondAttribute="height" multiplier="5:4" id="eXY-y8-BrG"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPU-Di-1bE">
+                        <rect key="frame" x="15" y="91" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="wAg-7w-R4v"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_multiPic" translatesAutoresizingMaskIntoConstraints="NO" id="q6I-A7-BoL">
+                        <rect key="frame" x="273" y="62" width="32" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="LpY-ut-R44"/>
+                            <constraint firstAttribute="height" constant="14" id="o62-yi-GJp"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="U33-Pq-HZU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="3pa-HR-Q9J"/>
+                    <constraint firstItem="c8V-qE-yza" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="4wR-c9-5oM"/>
+                    <constraint firstAttribute="trailing" secondItem="YPU-Di-1bE" secondAttribute="trailing" constant="15" id="BF6-kn-SIz"/>
+                    <constraint firstAttribute="bottom" secondItem="c8V-qE-yza" secondAttribute="bottom" constant="15" id="FJK-Hy-vtx"/>
+                    <constraint firstItem="U33-Pq-HZU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="KRj-qT-gHT"/>
+                    <constraint firstItem="YPU-Di-1bE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="MC2-5X-DSd"/>
+                    <constraint firstAttribute="trailing" secondItem="q6I-A7-BoL" secondAttribute="trailing" constant="15" id="io9-Mw-YvO"/>
+                    <constraint firstItem="q6I-A7-BoL" firstAttribute="bottom" secondItem="c8V-qE-yza" secondAttribute="bottom" id="ngR-Gw-lwi"/>
+                    <constraint firstAttribute="bottom" secondItem="YPU-Di-1bE" secondAttribute="bottom" id="rnp-rU-jUv"/>
+                    <constraint firstItem="c8V-qE-yza" firstAttribute="leading" secondItem="U33-Pq-HZU" secondAttribute="trailing" constant="15" id="vnq-Hq-tcq"/>
+                    <constraint firstAttribute="trailing" secondItem="c8V-qE-yza" secondAttribute="trailing" constant="15" id="zFw-XK-o2o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lineView" destination="YPU-Di-1bE" id="7Ce-Pt-Xef"/>
+                <outlet property="multiImageView" destination="q6I-A7-BoL" id="egt-Fe-QCP"/>
+                <outlet property="newsImageView" destination="c8V-qE-yza" id="duA-cp-Xq6"/>
+                <outlet property="newsTitleLabel" destination="U33-Pq-HZU" id="M1I-U9-yXQ"/>
+            </connections>
+            <point key="canvasLocation" x="-64" y="31"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico_multiPic" width="16" height="16"/>
+    </resources>
+</document>

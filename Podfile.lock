@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (4.5.0)
+  - FDFullscreenPopGesture (1.1)
+  - Kingfisher (3.10.2)
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.6.0):
+    - MMDrawerController/Core
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5.0)
+  - FDFullscreenPopGesture (~> 1.1)
+  - Kingfisher (~> 3.10.2)
+  - MMDrawerController (~> 0.6.0)
+  - SwiftyJSON (~> 3.1.4)
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: a37e09cbb1368a0f700db833bf6b7686d274bcc5
+
+COCOAPODS: 1.1.1
